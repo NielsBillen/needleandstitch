@@ -1,5 +1,5 @@
 #winkel {
-    background-image: url("../images/textures/fabric_white_squares.webp");
+    background-image: url("../images/textures/fabric_white_squares.jpg");
     padding: 2rem var(--padding-size) 4rem var(--padding-size);
 }
 
@@ -28,15 +28,15 @@
 
 
 #image1 {
-    background-image: url("../images/pictures/stoffen.webp");
+    background-image: url("../images/pictures/stoffen.jpg");
 }
 
 #image2 {
-    background-image: url("../images/pictures/garen.webp");
+    background-image: url("../images/pictures/garen.jpg");
 }
 
 #image3 {
-    background-image: url("../images/pictures/machines.webp");
+    background-image: url("../images/pictures/machines.jpg");
 }
 
 

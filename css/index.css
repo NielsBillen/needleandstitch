@@ -168,10 +168,10 @@ p {
 
 #workshops {
     border-top: 2px dashed darkgray;
-    background-image: url("../images/textures/fabric_plaid.webp");
+    background-image: url("../images/textures/fabric_plaid.jpg");
 }
 
 #contact {
     border-top: 2px dashed lightgray;
-    background-image: url("../images/textures/classy_fabric.webp");
+    background-image: url("../images/textures/classy_fabric.jpg");
 }
