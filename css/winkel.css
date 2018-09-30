@@ -1,0 +1,65 @@
+#winkel {
+    background-image: url("../images/textures/fabric_white_squares.webp");
+    padding: 2rem var(--padding-size) 4rem var(--padding-size);
+}
+
+#winkel-introduction {
+    max-width: var(--max-column-width);
+    margin-bottom: 4rem;
+}
+
+#winkel-content {
+    max-width: var(--max-column-width);
+}
+
+.image-cirle {
+    margin: 0rem 2rem;
+    border-radius: 50%;
+    width: 17vw;
+    height: 17vw;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    box-shadow: 0px 0px 1rem black;
+        border: 1px solid lightgray;
+}
+
+
+#image1 {
+    background-image: url("../images/pictures/stoffen.webp");
+}
+
+#image2 {
+    background-image: url("../images/pictures/garen.webp");
+}
+
+#image3 {
+    background-image: url("../images/pictures/machines.webp");
+}
+
+
+@media only screen and (max-width: 899px) {
+    .image-cirle {
+        width: 40vw;
+        height: 40vw;
+        border-radius: 1vw;
+    }
+}
+
+@media only screen and (max-width: 799px) {
+    #winkel-introduction {
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    #winkel-introduction {
+        max-width: none;
+    }
+    
+    #winkel {
+        padding: 0rem 3rem;
+    }
+}

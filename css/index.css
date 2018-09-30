@@ -1,0 +1,177 @@
+/******************************************************************************
+ * Font definitions
+ *****************************************************************************/
+
+@font-face {
+    font-family: "librebaskerville";
+    src: url('../fonts/LibreBaskerville/LibreBaskerville-Regular.woff2') format('woff2'),
+        url('../fonts/LibreBaskerville/LibreBaskerville-Regular.woff') format('woff'),
+        url("../fonts/LibreBaskerville/LibreBaskerville-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "domani";
+    src: url('../fonts/DomaniCP/DomaniCP.woff2') format('woff2'),
+        url('../fonts/DomaniCP/DomaniCP.woff') format('woff'),
+        url("../fonts/DomaniCP/DomaniCP.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/******************************************************************************
+ * Variable declarations
+ *****************************************************************************/
+
+:root {
+    --max-column-width: 1200px;
+    --padding-size: 2rem;
+}
+
+/******************************************************************************
+ * Default elements
+ *****************************************************************************/
+
+html {
+    scroll-behavior: smooth;
+    font-family: librebaskerville;
+    font-size: 100%;
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	font-family: domani;
+	font-size: 6rem;
+	font-weight: normal;
+	text-align: center;
+	margin: 2rem 0rem;
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 1rem 0rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 799px) {
+    h2 {
+        font-size: 3rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+p {
+    text-align: justify;
+}
+
+/******************************************************************************
+ * Class stylings
+ *****************************************************************************/
+
+.inset {
+    color: transparent;
+    background-color: black;
+    text-shadow: 0px 2px 4px rgba(255,255,255,0.25);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+.inset.white {
+    color: transparent;
+    background-color: white;
+    text-shadow: 0px 2px 4px rgba(64,64,64,0.1);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+}
+
+.left {
+	display: flex;
+	align-items: flex-start;
+}
+
+.center {
+	display: flex;
+}
+
+.center.vertical {
+	align-items: center;
+
+}
+
+.center.horizontal {
+	align-items: center;
+}
+
+.center.both {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3rem;
+    align-content: center;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 899px) {
+    .column-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/******************************************************************************
+ * Element stylings
+ *****************************************************************************/
+
+#workshops {
+    border-top: 2px dashed darkgray;
+    background-image: url("../images/textures/fabric_plaid.webp");
+}
+
+#contact {
+    border-top: 2px dashed lightgray;
+    background-image: url("../images/textures/classy_fabric.webp");
+}

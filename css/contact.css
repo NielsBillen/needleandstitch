@@ -1,0 +1,75 @@
+#contact {
+    padding: 2rem 1rem 4rem 1rem;
+}
+
+.contact-table {
+    padding: 1rem;
+}
+
+#contact-wrapper {
+    max-width: var(--max-column-width);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+        
+    background-image: url("../images/textures/fabric_plaid.webp");
+    color: black;
+    border: 0.25rem dashed lightgray;
+    border-radius: 0.5rem;
+}
+
+#contact-wrapper > section {
+    padding: 1rem 3rem;
+}
+
+#openingsuren {
+     border-right: 0.25rem dashed lightgray;
+}
+
+#openingsuren-table, #info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.25rem;
+    justify-items: flex-start;
+    
+}
+
+#openingsuren-table > p, #info > p {
+    margin: 0;
+}
+
+#info > a {
+    text-decoration: none;
+}
+
+#info {
+    grid-template-columns: 1.5rem auto;
+    grid-row-gap: 0.75rem;
+}
+
+@media only screen and (max-width: 999px) {
+    #contact-wrapper > section {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    #contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    #contact-wrapper > section {
+        padding: 1rem 3rem;
+    }
+    
+    #openingsuren {
+        border-right: none;
+        border-bottom: 0.25rem dashed lightgray;
+    }
+}
+
+@media only screen and (max-width: 799px) {
+    #contact-wrapper > section {
+        padding: 1rem;
+    }
+}
