@@ -37,7 +37,7 @@ nav > a:hover {
 /* a wrapper for the stitch effect */
 #header {
 	flex-direction: column;
-    background-image: url("../images/textures/fabric_custom_diagonal.webp");
+    background-image: url("../images/textures/fabric_custom_diagonal.jpg");
 }
 
 #header-layout {
@@ -100,7 +100,7 @@ nav > a:hover {
 	width: 100%;
 	flex: 1;
 	
-	background-image: url("../images/banner/banner-large.webp");
+	background-image: url("../images/banner/banner-large.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -130,6 +130,10 @@ nav > a:hover {
 }
 
 @media only screen and (max-width: 1099px) {
+    #banner {
+        background-image: url("../images/banner/banner-medium.jpg");
+    }
+    
     h1 {
         font-size: 3.5rem;
         margin: 1rem 0rem;
@@ -186,6 +190,10 @@ nav > a:hover {
 
 
 @media only screen and (max-width: 699px) {
+    #banner {
+        background-image: url("../images/banner/banner-small.jpg");
+    }
+    
     #header-layout {
         grid-template-columns: 1fr;
         justify-items: stretch;

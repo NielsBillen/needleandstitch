@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
         
-    background-image: url("../images/textures/fabric_plaid.webp");
+    background-image: url("../images/textures/fabric_plaid.jpg");
     color: black;
     border: 0.25rem dashed lightgray;
     border-radius: 0.5rem;
